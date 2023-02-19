@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3aa351d89dd542d3aeb0f50f8519bfba" Name="Diagram1">
+        <EntityTypeShape EntityType="TaskModel.Category" Width="1.5" PointX="7.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskModel.Order" Width="1.5" PointX="7.375" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskModel.Product" Width="1.5" PointX="1.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskModel.ProductOrder" Width="1.5" PointX="4.375" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskModel.User" Width="1.5" PointX="1.375" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskModel.UserOrder" Width="1.5" PointX="4.375" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="TaskModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskModel.FK_ProductOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskModel.FK_UserOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskModel.FK_ProductOrder_ProductOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskModel.FK_UserOrder_UserOrder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

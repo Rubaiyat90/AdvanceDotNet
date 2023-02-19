@@ -1,0 +1,29 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_DashboardLayout.cshtml";
+}
+
+<h2>Students details</h2>
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Cgpa</th>
+    </thead>
+
+    <tbody>
+        @for (int i = 0; i < 10; i++)
+        {
+            <tr>
+                <td>@ViewBag.Students[i].Id</td>
+                <td>@ViewBag.Students[i].Name</td>
+                <td>@ViewBag.Students[i].Cgpa</td>
+         
+            </tr>
+        }
+        </tbody>
+</table>
+
